@@ -13,6 +13,12 @@
             "displayName": "Values"
         },
         {
+            "name": "Sentiment",
+            "displayNameKey": "Visual_Sentiment",
+            "kind": "Measure",
+            "displayName": "Sentiment"
+        },
+        {
             "name": "Excludes",
             "displayNameKey": "Visual_Excludes",
             "kind": "Grouping",
@@ -29,6 +35,10 @@
                     },
                     "Values": {
                         "min": 0,
+                        "max": 1
+                    },
+                    "Sentiment": {
+                        "min": -1,
                         "max": 1
                     },
                     "Excludes": {

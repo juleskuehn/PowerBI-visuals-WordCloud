@@ -34,4 +34,10 @@ export module wordCloudUtils {
 
         return `rgb(${red},${green},${blue})`;
     }
+    export function getSentimentColor(sentiment: number): string {
+        const blue: number = Math.round((sentiment + 1) / 2 * 255);
+        const red: number = Math.round(255 - blue);
+        const green: number = Math.round(255 - Math.max(blue, red));
+        return `rgb(${red},${green},${blue})`;
+    }
 }
