@@ -6,5 +6,6 @@ typings
 .api
 *.log
 /coverage
+package-lock.json
 
 webpack.statistics.*.html
