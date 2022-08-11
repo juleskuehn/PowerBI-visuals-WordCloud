@@ -46,6 +46,9 @@ import EnumerateVisualObjectInstancesOptions = powerbiVisualsApi.EnumerateVisual
 import VisualObjectInstanceEnumerationObject = powerbiVisualsApi.VisualObjectInstanceEnumerationObject;
 import DataViewObjectPropertyIdentifier = powerbiVisualsApi.DataViewObjectPropertyIdentifier;
 import CustomVisualOpaqueIdentity = powerbiVisualsApi.visuals.CustomVisualOpaqueIdentity;
+import VisualEnumerationInstanceKinds = powerbiVisualsApi.VisualEnumerationInstanceKinds;
+import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
+
 
 import IColorPalette = powerbiVisualsApi.extensibility.IColorPalette;
 import IVisualEventService = powerbiVisualsApi.extensibility.IVisualEventService;
@@ -1682,10 +1685,12 @@ export class WordCloud implements IVisual {
                 instance = {
                     objectName: options.objectName,
                     displayName: this.data.texts[item.wordIndex].text,
-                    selector: ColorHelper.normalizeSelector(
-                        item.selectionIds[0].getSelector(),
-                        false),
-                    properties: { fill: { solid: { color: item.color } } }
+                    selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
+                    altConstantValueSelector: this.data.texts[item.wordIndex].selectionId.getSelector(),
+                    properties: { fill: { solid: { color: item.color } } },
+                    propertyInstanceKind: {
+                        fill: VisualEnumerationInstanceKinds.ConstantOrRule
+                    }
                 };
                 this.addAnInstanceToEnumeration(instanceEnumeration, instance);
             }
