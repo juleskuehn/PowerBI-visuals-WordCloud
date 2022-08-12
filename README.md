@@ -16,7 +16,13 @@ Optionally you can also use a measure to provide weightage to the text. If none 
 See also [Word Cloud at Microsoft Office store](https://store.office.com/en-us/app.aspx?assetid=WA104380752&sourcecorrid=037b6fba-5738-4e90-a8ff-c4f1575a0b05&searchapppos=0&ui=en-US&rs=en-US&ad=US&appredirect=false)
 
 ## Custom word coloring by sentiment
-This fork of the repo adds color functions. To use in a Power BI dashboard, click on the "..." under Visualizations and Import the PBIVIZ file found in this repo under "dist":
+This fork of the repo adds color functions.
+
+To use in a Power BI dashboard:
+
+Download the [PBIVIZ file from this repo](https://github.com/ssc-dsai/PowerBI-visuals-WordCloud/raw/main/dist/WordCloudColorFn1447959067750.2.0.1.pbiviz).
+
+Click on the "..." under Visualizations and Import the PBIVIZ file you just downloaded.
 
 ![Screenshot of "import visualization file" menu](https://user-images.githubusercontent.com/1150048/184415935-cf33fa12-71ad-410e-99a0-33c0b26816c5.png)
 
@@ -26,11 +32,11 @@ The WordCloud icon should now show up and, unlike the original Microsoft version
 
 ![Screenshot of red wordcloud icon](https://user-images.githubusercontent.com/1150048/184416349-ee07f77b-3c12-4439-b1c5-85e98aa30eb3.png)
 
-Once you have added words into the WordCloud, go the the formatting tab and select the "fn" button for one of the words. (Doesn't matter which one)
+Once you have added words into the WordCloud, go the the Format Visual tab > Data Colors and click the "fx" button for one of the words. (Doesn't matter which word.)
 
 ![Screenshot of the color function button](https://user-images.githubusercontent.com/1150048/184419288-3db7cf0b-7a94-46bf-802d-2b763bedd1b2.png)
 
-Set an appropriate color function, for example:
+Then, set an appropriate colorizing function, for example:
 
 ![Screenshot of the color function window with red, grey and blue color gradient](https://user-images.githubusercontent.com/1150048/184419472-42d7caa0-f0e7-49dd-9be7-0d7395767a27.png)
 
