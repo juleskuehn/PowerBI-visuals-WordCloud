@@ -2,8 +2,9 @@
 
 > Word Cloud is a visual representation of word frequency and value. Use it to get instant insight into the most important terms in a set.
 
-![Wordcloud chart screenshot](./assets/screenshot.png)
-# Overview
+![Screenshot of sentiment colored word cloud](https://user-images.githubusercontent.com/1150048/184419646-d0a41b56-94b3-4da6-a872-79b763f1302c.png)
+
+## Overview
 Word Cloud is a visual representation of word frequency and value. Use it to get instant insight into the most important terms in your data.
 
 With the interactive experience of Word Cloud in Power BI, you no longer have to tediously dig through large volumes of text to find out which terms are prominent or prevalent. You can simply visualize them as Word Cloud and get the big picture instantly and user Power BI’s interactivity to slice and dice further to uncover the themes behind the text content.
