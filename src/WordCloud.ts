@@ -1686,7 +1686,7 @@ export class WordCloud implements IVisual {
                     objectName: options.objectName,
                     displayName: this.data.texts[item.wordIndex].text,
                     selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
-                    altConstantValueSelector: this.data.texts[item.wordIndex].selectionId.getSelector(),
+                    // altConstantValueSelector: this.data.texts[item.wordIndex].selectionId.getSelector(),
                     properties: { fill: { solid: { color: item.color } } },
                     propertyInstanceKind: {
                         fill: VisualEnumerationInstanceKinds.ConstantOrRule
